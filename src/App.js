@@ -50,7 +50,7 @@ import CheckoutSuccess from './CheckoutSuccess';
         <Route path="/" element={<Layout />}>
           {/*Public routes*/}
           <Route index element={<Public />} />
-          <Route path="login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="shop" element={<Shop />} />
 
           <Route path='checkout-success' element={<CheckoutSuccess/>} />
@@ -80,7 +80,6 @@ import CheckoutSuccess from './CheckoutSuccess';
               <Route path=":id" element={<EditUser/>}/>
               <Route path="new" element={<NewUserForm/>}/>
             </Route>
-           
 
             <Route path="notes">
               <Route index element={<NotesList />} />
@@ -107,12 +106,8 @@ import CheckoutSuccess from './CheckoutSuccess';
             </Route>
 
               <Route path='/dash/dashboard/panel' element={<DashboardHomepage/>}/>
-
-
-              {/* <Route path="/dash/dashboard/new" element={<NewNoteForm />} /> */}
               <Route path="/dash/dashboard/service-history" element={<DashboardServiceHistory />} />
               <Route path="/dash/dashboard/settings" element={<DashboardSettings />} />
-              {/* <Route path="/dash/dashboard/flota" element={<DashboardFlota />} /> */}
               <Route path="/dash/dashboard/customers" element={<DashboardCustomers />} />
               <Route path="/dash/dashboard/homepageManagement" element={<DashboardHomepageManagement />} />
               <Route path="/dash/dashboard/documentation" element={<DashboardDocumentation />} />
