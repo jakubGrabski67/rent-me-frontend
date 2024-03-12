@@ -14,20 +14,12 @@ import Prefetch from './features/auth/Prefetch';
 import PersistLogin from './features/auth/PersistLogin';
 import RequireAuth from './features/auth/RequiredAuth';
 import {ROLES} from './config/roles';
-
 import DashboardHomepage from './components/Dashboard/DashboardPages/DashboardHomepage'
-
 import DashboardSettings from './components/Dashboard/DashboardPages/DashboardSettings'
 import DashboardServiceHistory from './components/Dashboard/DashboardPages/DashboardServiceHistory'
-// import DashboardFlota from './components/Dashboard/DashboardPages/DashboardFlota'
 import DashboardCustomers from './components/Dashboard/DashboardPages/DashboardCustomers'
 import DashboardDocumentation from './components/Dashboard/DashboardPages/DashboardDocumentation'
 import Shop from './components/HomepagePages/Shop';
-// import NewCarForm from './features/cars/NewCarForm';
-// import CarsList from './features/cars/CarsList';
-// import EditCar from './features/cars/EditCar';
-// import NewCar from './features/cars/NewCar';
-
 import CarsList from './features/cars/CarsList'
 import EditCar from './features/cars/EditCar'
 import NewCar from './features/cars/NewCar'

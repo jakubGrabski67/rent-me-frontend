@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import "./HomepageHeader.css";
 import { Row } from "reactstrap";
 import { motion } from "framer-motion";
@@ -66,18 +66,18 @@ const HomepageHeader = () => {
             <div className={`bar ${mobileMenuOpen ? "active" : ""}`}></div>
           </div>
           <div className="logo-top">
-          <video width="200" height="70" autoPlay  muted>
-      <source src={logo} type="video/mp4" />
-      Twoja przeglądarka nie obsługuje tagu wideo.
-    </video>
+            <video width="200" height="70" autoPlay muted>
+              <source src={logo} type="video/mp4" />
+              Twoja przeglądarka nie obsługuje tagu wideo.
+            </video>
           </div>
-          
+
           <div className={`navigation ${mobileMenuOpen ? "active" : ""}`}>
             <ul className={`menu ${mobileMenuOpen ? "active" : ""}`}>
               {nav__links.map((item, index) => (
                 <li className="nav__item" key={index}>
-                  <a
-                    href={item.path}
+                  <Link
+                    to={item.path}
                     className={`nav__link ${
                       location.pathname === item.path
                         ? "active on-current-page"
@@ -85,7 +85,7 @@ const HomepageHeader = () => {
                     }`}
                   >
                     {item.display}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
