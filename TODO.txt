@@ -1,0 +1,27 @@
+
+//////////////////MAIN PAGE////////////////////////
+
+
+Button na stronie floty -> Nie jesteś zdecydowany jakie auto chcesz wypożyczyć? - kliknij tutaj -> przekierowanie do wyszukiwarki auta
+
+Wyszukiwarka: Pola -> ilosc osób, typ auta, skrzynia, itp itd........
+
+
+dashboard - klienci -> do klienta ktory wypozyczy auto dodac przypisywanie wypozyczonego auta po ID pojazdu - wtedy stan auta zmienia sie na zajęty do daty xyz
+po dacie xyz auto zmienia sie znowu na stan dostępny
+Klient detal - dane
+Klient firma - dane + NIP firmy i inne dane firmy?
+
+
+
+
+
+//////////////////DASHBOARD///////////////////////
+
+NA KOŃCU COŚ ZEBY NIE TRZEBA BYLO ODSWIEZAC LUB AUTO ODSWIEZANIE PO DODANIU/EDYCJI
+
+ZROBIĆ RESPONSYWNOŚĆ MOBILNĄ
+
+USUNĄĆ WSZYSTKIE ERRORY NA STRONACH W KONSOLI
+
+TESTY CYPRESS

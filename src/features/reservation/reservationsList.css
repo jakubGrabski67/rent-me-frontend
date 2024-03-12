@@ -1,0 +1,22 @@
+.field {
+    font-size: 14px;
+}
+
+.field-selectedOptions{
+    width: 20vh;
+}
+
+.p-selectedOptions{
+    width: 17vh;
+}
+
+  /* Rozdzielczość HD (1366x768) */
+  @media screen and (min-width: 1366px) and (max-width: 1366px) and (min-height: 768px) and (max-height: 768px) {
+    .field-selectedOptions{
+        width: 25vh;
+    }
+
+    .btn-success {
+        margin-left: 10px !important;
+    }
+  }

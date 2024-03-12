@@ -1,0 +1,216 @@
+/* CarsList.css */
+/* Dodajmy styl dla elementu Slider */
+.slick-slider {
+  position: relative;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Usuńmy marginesy dla elementów wewnątrz Slidera */
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+/* Dodajmy style dla strzałek Slidera */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+  cursor: pointer;
+ 
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-dots {
+  position: absolute;
+  display: block !important;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.card-img-top{
+  height: auto;
+  min-height: 293px;
+  max-height: 293px;
+}
+
+.btn{
+  margin-left: 10px;
+}
+
+select{
+  width: 200px;
+  height: 38px;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.spacer{
+  height: 10px;
+}
+
+.custom-filters-container {
+  margin-left: 240px; /* Dostosuj wartość przesunięcia według potrzeb */
+}
+
+.custom-card-container {
+  margin-left: 250px; /* Dostosuj wartość przesunięcia według potrzeb */
+}
+
+.card {
+  max-width: 500px; /* Dostosuj szerokość karty według potrzeb */
+}
+
+.btn-success{
+  margin-left: 40px !important;
+}
+
+
+.modal-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 80vh;
+  max-width: 80vw;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  z-index: 9999;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6), 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.modal-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
+.modal-content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6), 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  z-index: 99999;
+  margin: auto;
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.toggle-button {
+  position: relative;
+  transition: color 3.3s ease-in-out;
+  outline: none; /* Dodajemy, aby usunąć niechciane obramowanie */
+  cursor: pointer; /* Dodajemy, aby pokazać, że element jest klikalny */
+  background: none; /* Usuwamy domyślne tło przycisku */
+  border: none; /* Usuwamy domyślną ramkę przycisku */
+}
+
+.toggle-button.open::before,
+.toggle-button.open::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  transition: transform 3.3s ease-in-out;
+}
+
+.toggle-button.open::before {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.toggle-button.open::after {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+
+.card {
+  transition: max-height 0.5s ease-in-out; /* Dodajemy animację dla całej karty */
+}
+
+.description-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; /* Dodajemy animację dla max-height i padding */
+  padding: 0 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.description-container.open {
+  max-height: 500px; /* Dostatecznie duża wartość, aby pomieścić zawartość */
+  padding: 20px;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; /* Dodajemy animację dla max-height i padding */
+}
+
+.btnDesc{
+  color: #0a58ca;
+  margin-bottom: 10px;
+}
+
+.description{
+  text-align: left;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.bounce {
+  animation: bounce 1.5s infinite;
+}

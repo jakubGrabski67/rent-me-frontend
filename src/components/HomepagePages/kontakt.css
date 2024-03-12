@@ -1,0 +1,73 @@
+
+
+/* Styl dla obrazu */
+.containerr {
+    display: flex;
+    align-items: center; /* Wyrównaj elementy pionowo */
+    text-align: center;
+  }
+  
+
+  .text {
+    flex-grow: 1; /* Tekst zajmuje dostępne miejsce na prawo od obrazu */
+    text-align: center;
+}
+
+.contact__icons {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center; /* Wyśrodkowanie w pionie */
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+
+.voucher__header{
+    background-color: #0a1d37;
+    color: #fff;
+    border-radius: 0.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+  
+  .form-group {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .label-kontakt {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  .input-kontakt[type="text"],
+  .input-kontakt[type="email"],
+  .textarea-kontakt {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 50vh;
+  }
+  
+  .button-submit-contact {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button-submit-contact:hover {
+    background-color: #0056b3;
+  }
+  
+  .map-container{
+    padding-left: 2vh;
+  }

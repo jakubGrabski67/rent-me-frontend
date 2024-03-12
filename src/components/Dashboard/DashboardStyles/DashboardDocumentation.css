@@ -1,0 +1,25 @@
+.h2-documentation{
+    color: #fff;
+    
+}
+
+.form-label{
+    color: #999 !important;
+}
+
+.documentation-forms{
+
+}
+
+/* Rozdzielczość HD (1366x768) */
+@media screen and (min-width: 1366px) and (max-width: 1366px) and (min-height: 768px) and (max-height: 768px) {
+    .forms{
+        margin-left: 15vh;
+        width: 125vh;
+    }
+
+    .rental-agreement-form{
+        margin-left: 20vh !important;
+        max-width: 130vh;
+    }
+}

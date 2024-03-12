@@ -1,0 +1,183 @@
+.homepageHeader{
+    width: 100%;
+    height: 70px;
+    line-height: 100px;
+    background-color: #fff;
+}
+
+.nav__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 8px; 
+  
+}
+.logo-top{
+  display: flex;
+  align-items: center;
+  transform: scale(1.4);
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+@media (max-width: 768px) {
+    .logo {
+      padding-right: 350px;
+    }
+}
+  
+
+
+
+.logo h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-bottom: 0;
+}
+
+.nav__item a{
+    color: #0a1d37;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav__icons{
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+.nav__icons span i{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.cart__icon, 
+.fav__icon{
+    position: relative;
+}
+
+.badge{
+    position: absolute;
+    top: 25%;
+    right: -8%;
+    width: 15px;
+    height: 15px;
+    content: "";
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.nav__icons span img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu a {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .menu a::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid transparent; /* Ustaw kolor podkreślenia na przezroczysty */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Efekt podkreślenia na hover */
+  .menu a:hover::before {
+    width: 100%;
+    border-bottom-color: #007bff; /* Ustaw kolor podkreślenia na nieprzezroczysty */
+  }
+  
+  /* Styl dla aktywnego linku */
+  .menu a.active::before {
+    width: 100%;
+    border-bottom-color: #007bff;
+  }
+
+
+
+  
+
+/* Styl przycisku mobilnej nawigacji */
+.menu-button {
+  display: none; /* Ukryj przycisk na standardowych ekranach */
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  padding-left: 15px;
+}
+
+.menu-button div {
+  height: 3px;
+  width: 25px;
+  background: #007bff;
+  margin: 6px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-button.active div:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-button.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button.active div:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Responsywność na mniejszych ekranach (maksymalna szerokość 768px) */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    z-index: 2;
+  }
+
+  .menu-button {
+    display: block; /* Pokaż przycisk na małych ekranach */
+  }
+
+}
+
+

@@ -1,0 +1,11 @@
+.rbc-toolbar .rbc-toolbar-label{
+    color: #2884ff;
+    font-weight:bold;
+    padding-right: 50vh;
+    margin-top: 1vh;
+}
+
+.rbc-event.rbc-selected, .rbc-day-slot .rbc-selected.rbc-background-event{
+    background-color: #56c57a;
+}
+
