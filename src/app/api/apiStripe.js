@@ -1,4 +1,4 @@
-export const url = "http://localhost:3500";
+export const url = "https://rent-me-api.onrender.com";
 
 export const setHeaders = () => {
   const headers = {
